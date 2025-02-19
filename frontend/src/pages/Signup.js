@@ -1,7 +1,19 @@
 import React from "react";
 
 const Signup = () => {
-    return <h1>Rảnh thì làm, k thì nhót</h1>;
+    return (
+        <div>
+          <h1>Rảnh thì làm, k thì bỏ qua</h1>
+          <h1>Rảnh thì làm, k thì bỏ qua</h1>
+          <h1>Rảnh thì làm, k thì bỏ qua</h1>
+          <h1>Rảnh thì làm, k thì bỏ qua</h1>
+          <h1>Rảnh thì làm, k thì bỏ qua</h1>
+          <h1>Rảnh thì làm, k thì bỏ qua</h1>
+          <h1>Rảnh thì làm, k thì bỏ qua</h1>
+          <h1>Rảnh thì làm, k thì bỏ qua</h1>
+          <h1>Rảnh thì làm, k thì bỏ qua</h1>
+        </div>
+    );
 };
 
 export default Signup;

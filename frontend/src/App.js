@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Generator from "./pages/Generator";
 import JsonToVideo from "./pages/JsonToVideo";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
+      <Footer/>
     </Router>
   );
 }

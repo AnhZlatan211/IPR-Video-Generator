@@ -6,7 +6,7 @@ const Nav = () => {
     <nav className="navi">
       <ul>
         <div className="left">
-            <li><Link to="/">VideoGen</Link></li>
+            <li><Link to="/"><i class="fa-solid fa-video"></i> VideoGen</Link></li>
         </div>
         <div className="mid">
             <li><Link to="/generator">Generator</Link></li>

@@ -28,6 +28,11 @@
     text-decoration: none;
     color: white;
 }
+.navi ul .mid a:hover {
+    background:linear-gradient(45deg,#864ef7, #ff5398);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .navi ul .right {
     display: flex;
     list-style: none;
@@ -52,4 +57,59 @@
 }
 .navi ul .right .signup:hover {
     background: linear-gradient(45deg,#7d4ae4, #d64b83);
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 30px 10% 20px 10%;
+}
+footer .up {
+    display: flex;
+    justify-content: space-between;
+    gap:8%;
+}
+footer .down {
+    text-align: center;
+}
+footer .up .ele {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .up .ele p{
+    margin-bottom: 15px;
+}
+footer .up .ele .quicklink a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+}
+footer .up .ele .quicklink a:hover{
+    background:linear-gradient(45deg,#864ef7, #ff5398);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+footer .up .ele i{
+    display: inline-block;
+    color: white;
+    margin-right: 5px;
+    font-size: 16px;
+}
+footer .up .ele:first-child a i{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    margin-right: 12px;
+    transition: 0.3s;
+}
+footer .up .ele:first-child a i:hover{
+    background:linear-gradient(45deg,#864ef7, #ff5398);
+    color: white;
 }
