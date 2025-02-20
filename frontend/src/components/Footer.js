@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <div className='up'>
         <div className='ele'>
-          <h3>VideoGen</h3>
+          <h3 className='title'>VideoGen</h3>
           <p>Video Generator is a web application that allows creating videos from a list of photos and an audio file. Users can upload multiple photos and an audio file, and the system will automatically combine them into a video edit.</p>
           <div>
             <Link><i class="fa-brands fa-facebook"></i></Link>
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
         <div className='ele'>
-          <h3>Quick Link</h3>
+          <h3 className='title'>Quick Link</h3>
           <div className='quicklink'>
             <Link to="" >Home</Link><br/>
             <Link to="/generator" >Generator</Link><br/>
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
 
         <div className='ele'>
-          <h3>Information</h3>
+          <h3 className='title'>Information</h3>
           <div>
             <p>FAQ</p>
             <p>Blog</p>
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
 
         <div className='ele'>
-          <h3>Contact</h3>
+          <h3 className='title'>Contact</h3>
           <div>
             <p><i class="fa-solid fa-location-dot"></i> Trường Đại học Hà Nội, Km9 Đ. Nguyễn Trãi, P. Văn Quán, Nam Từ Liêm, Hà Nội</p>
             <p><i class="fa-solid fa-envelope"></i>comdaogaron@gmail.com</p>

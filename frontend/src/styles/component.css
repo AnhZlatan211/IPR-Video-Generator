@@ -1,12 +1,12 @@
 .navi {
     background: rgb(30, 30, 30);
-    padding: 16px 10%;
 }
 .navi ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 10%;
 }
 .navi ul .left a {
     display: inline-block;
@@ -80,6 +80,9 @@ footer .up .ele {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+footer .up .ele .title {
+    font-size: 20px;
 }
 footer .up .ele p{
     margin-bottom: 15px;
