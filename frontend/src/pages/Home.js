@@ -2,11 +2,12 @@ import React from "react";
 import Support from "./Support";
 import Pricing from "./Pricing";
 import { Link } from "react-router-dom";
+import "../styles/index.css";
 
 const Home = () => {
   return (
     <div>
-      <div className="d-flex flex-column align-items-center min-vh-100 text-center mt-4">
+      <div className="d-flex flex-column align-items-center min-vh-100 text-center mt-4 pb-5">
         <h1 className="display-3 fw-bold">
           Bring your{" "}
           <span
@@ -24,14 +25,124 @@ const Home = () => {
           Unlock your creativity and turn any idea into a full-length video. Let
           your imagination take center stage!
         </p>
-        <Link to="/generator" className="btn btn-primary mt-4 px-4 py-3 fw-bold rounded-pill">
+        <Link to="/generator" className="btn btn-primary mt-4 px-4 py-3 fw-bold rounded-pill link-1">
           Try Video Generator
         </Link>
         <p className="mt-2 text-muted small">No credit card needed</p>
         <div className="ratio ratio-16x9 w-75 h-75 bg-white d-flex align-items-center justify-content-center mt-4">
-            <video title="vid" className="object-fit-cover rounded-5" autoPlay muted loop>
-              <source src="https://assets-static.invideo.io/files/Stock_Footage2x_V2_78c7e1c798.mp4" type="video/mp4"/>
-            </video>
+          <video
+            title="vid"
+            className="object-fit-cover rounded-5"
+            autoPlay
+            muted
+            loop
+          >
+            <source
+              src="https://assets-static.invideo.io/files/Stock_Footage2x_V2_78c7e1c798.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+
+      <div className="d-flex flex-column align-items-center min-vh-100 text-center p-5">
+        <h1 className="display-3 fw-bold">
+          Convert{" "}
+          <span
+            className="text-primary"
+            style={{
+              background: "linear-gradient(45deg,#1779FB, #5CCA7E)",
+              backgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            JSON to video!
+          </span>
+        </h1>
+        <p className="mt-3 text-secondary">
+          A video creation API to boost your video automation
+        </p>
+        <Link to="/json-to-video" className="btn btn-primary mt-4 px-4 py-3 fw-bold rounded-pill link-2">
+          Try For Free
+        </Link>
+        <p className="mt-2 text-muted small">No credit card needed</p>
+        <div className="container">
+          <div className="shadow-lg bg-dark mt-3 p-5 d-flex flex-row gap-5 rounded-3">
+            <div className="col-md-6">
+              <h3 className="fw-bolder text-white">JSON</h3>
+              <textarea
+                className="form-control bg-white text-black"
+                rows={12}
+                readOnly
+                defaultValue={`{
+  "resolution": "full-hd",
+  "quality": "high",
+  "scenes": [
+    {
+      "comment": "Scene #1",
+      "transition": {
+        "style": "circleopen",
+        "duration": 1.5
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "https://assets.json2video.com/assets/images/london-01.jpg",
+          "duration": 10
+        }
+      ]
+    },
+    {
+      "comment": "Scene #2",
+      "transition": {
+        "style": "wipeup",
+        "duration": 1.5
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "https://assets.json2video.com/assets/images/london-02.jpg",
+          "duration": 10
+        }
+      ]
+    },
+    {
+      "comment": "Scene #3",
+      "transition": {
+        "style": "fade",
+        "duration": 1.5
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "https://assets.json2video.com/assets/images/london-03.jpg",
+          "duration": 10
+        }
+      ]
+    }
+  ]
+}`}
+              />
+            </div>
+            <div className="col-md-6">
+              <h3 className="fw-bolder text-white">Simple London slideshow</h3>
+              <div style={{aspectRatio:"" }}></div>
+              <video
+                title="video"
+                style={{ height: "300px", objectFit: "cover"}}
+                className="rounded-2"
+                controls
+                autoPlay
+                muted
+                loop
+              >
+                <source
+                  src="https://assets.json2video.com/tutorial/image-4.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -109,8 +220,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <Support />
-      <div className="container py-5 mb-5 ">
+
+      <div className="container py-5 mb-5">
         <h2 className="text-center display-4 fw-bold mb-4">
           What our
           <span
@@ -256,6 +369,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <Pricing />
     </div>
   );

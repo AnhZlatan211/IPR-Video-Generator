@@ -9,12 +9,15 @@ import Support from "./pages/Support";
 import Pricing from "./pages/Pricing";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import "./styles/component.css"
+import ScrollToTop from "./pages/ScrollToTop";
+import "./styles/component.css";
+import "./styles/index.css";
 
 function App() {
   return (
     <Router>
       <Nav />
+      <ScrollToTop />
       <div style={{ padding: "20px" }}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,7 +29,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
