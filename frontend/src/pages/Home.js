@@ -110,6 +110,152 @@ const Home = () => {
         </div>
       </div>
       <Support />
+      <div className="container py-5 mb-5 ">
+        <h2 className="text-center display-4 fw-bold mb-4">
+          What our
+          <span
+            style={{
+              background: "linear-gradient(45deg,#1779FB, #5CCA7E)",
+              backgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            {" "}
+            customers say
+          </span>
+        </h2>
+        <p className="text-center text-muted mb-5">
+          People love how great our product works and how we're always there to
+          help
+        </p>
+
+        <div className="row g-4">
+          <div className="col-md-6 col-lg-4">
+            <div className="card shadow-sm p-4">
+              <p className="text-muted mb-3">
+                "This is a brilliant idea, a time saver. I can be endlessly
+                creative with this great service. It's awesome."
+              </p>
+              <div className="d-flex align-items-center mb-2">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/2202/2202112.png"
+                  alt="Ryan Hoover"
+                  className="rounded-circle me-3 w-25 h-25"
+                />
+                <div>
+                  <div className="fw-semibold">Nguyen Duy Anh Zlatan</div>
+                  <div className="text-muted small">Developer</div>
+                </div>
+              </div>
+              <span className="text-muted small">17 January 2024</span>
+            </div>
+          </div>
+
+          <div className="col-md-6 col-lg-4">
+            <div className="card shadow-sm p-4">
+              <p className="text-muted mb-3">
+                "The editor is easy to use, very similar to Capcut and simple
+                enough to integrate into the backend."
+              </p>
+              <div className="d-flex align-items-center mb-2">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/4333/4333609.png"
+                  alt="Halem Wendersson"
+                  className="rounded-circle me-3 w-25 h-25"
+                />
+                <div>
+                  <div className="fw-semibold">Kiet Dau Dinh</div>
+                  <div className="text-muted small">Developer</div>
+                </div>
+              </div>
+              <span className="text-muted small">20 February 2024</span>
+            </div>
+          </div>
+
+          <div className="col-md-6 col-lg-4">
+            <div className="card shadow-sm p-4">
+              <p className="text-muted mb-3">
+                "Very useful service and great support team."
+              </p>
+              <div className="d-flex align-items-center mb-2">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/4140/4140047.png"
+                  alt="John Allison"
+                  className="rounded-circle me-3 w-25 h-25"
+                />
+                <div>
+                  <div className="fw-semibold">Than Thuong</div>
+                  <div className="text-muted small">No-code developer</div>
+                </div>
+              </div>
+              <span className="text-muted small">28 October 2024</span>
+            </div>
+          </div>
+
+          <div className="col-md-6 col-lg-4">
+            <div className="card shadow-sm p-4">
+              <p className="text-muted mb-3">
+                "I have so many ideas running through my head right now of use
+                cases I can do with your API using Bubble.io."
+              </p>
+              <div className="d-flex align-items-center mb-2">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/1154/1154448.png"
+                  alt="Jesus Vazquez"
+                  className="rounded-circle me-3 w-25 h-25"
+                />
+                <div>
+                  <div className="fw-semibold">Nguyen Nam Anh</div>
+                  <div className="text-muted small">No-code developer</div>
+                </div>
+              </div>
+              <span className="text-muted small">17 January 2024</span>
+            </div>
+          </div>
+
+          <div className="col-md-6 col-lg-4">
+            <div className="card shadow-sm p-4">
+              <p className="text-muted mb-3">
+                "The possibilities with VideoGen are endless. The templates are
+                super easy to set up and incredibly versatile."
+              </p>
+              <div className="d-flex align-items-center mb-2">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/18951/18951533.png"
+                  alt="Mike Mathisen"
+                  className="rounded-circle me-3 w-25 h-25"
+                />
+                <div>
+                  <div className="fw-semibold">Polo Din Poc Nho</div>
+                  <div className="text-muted small">Creator of ProductHunt</div>
+                </div>
+              </div>
+              <span className="text-muted small">15 April 2024</span>
+            </div>
+          </div>
+
+          <div className="col-md-6 col-lg-4">
+            <div className="card shadow-sm p-4">
+              <p className="text-muted mb-3">
+                "Love the tool and love the support from the team. The best of
+                VideoGen is how easy it is to create new video!"
+              </p>
+              <div className="d-flex align-items-center mb-2">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/1308/1308845.png"
+                  alt="Borja Palasá"
+                  className="rounded-circle me-3 w-25 h-25"
+                />
+                <div>
+                  <div className="fw-semibold">Ibrahimovic</div>
+                  <div className="text-muted small">No-code & AI YouTuber</div>
+                </div>
+              </div>
+              <span className="text-muted small">21 October 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <Pricing />
     </div>
   );
