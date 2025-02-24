@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.link-1 {
+    background: linear-gradient(90deg, #ff007a, #ff8c00);
+    border:none;
+}
+.link-1:hover {
+    background: linear-gradient(90deg, #e6006f, #eb8100);
+}
+.link-2 {
+    background: linear-gradient(45deg,#1779FB, #5CCA7E);
+    border:none;
+}
+.link-2:hover {
+    background: linear-gradient(45deg,#156de1, #50af6e);
+}
